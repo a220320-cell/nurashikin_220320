@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My CV - Achievement</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+/* Falling Stars Overlay */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(20px);
+        opacity: 0;
+    }
+}
+</style>
+
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="experience.html">Work Experience</a>
+    <a href="https://www.ukm.my" target="_blank">UKM</a>
+    <a href="https://eikin69.blogspot.com" target="_blank">My Blog</a>
+</nav>
+<h1>Welcome to My Interactive CV</h1>
+<div class="container">
+    <ul>
+        <li>"During September 2025, I actively participated in the execution of the launch event for the Ministry of Home Affairs' Komuniti Korektif Kampung Angkat MADANI initiative, a program managed by the Malaysian Prisons Department. The complexity of this project sharpened my professional competencies in coordination, prioritization, problem-solving, adaptability, and time management.".</li>
+<div class="container">
+
+</head>
+<body>
+
+    <img src="madanidua.png"alt="Picture Of Kampung Angkat MADANI Program">
+
+</body>
+</html>
+
+<h2 style="text-align:center;">Program Komuniti Korektif Kampung Angkat Jabatan Penjara Malaysia Tahun 2025</h2>
+    <div class="video-center">
+        <video width="320" height="240" controls>
+            <source src="achivement_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+<footer style="
+    background:black;
+    color:#f5d57a;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-size:16px;
+    border-top:2px solid #f5d57a;
+    box-shadow:0 -3px 15px rgba(255,215,0,0.3);
+">
+    © 2025 Nur Ashikin binti Mohd Taib | Interactive CV | All Rights Reserved
+</footer>
+
+<div class="stars"></div>
+
+<script>
+function createStar() {
+    const star = document.createElement("div");
+    star.classList.add("star");
+
+    const size = Math.random() * 3 + 1; 
+    const duration = Math.random() * 3 + 2;
+
+    star.style.width = size + "px";
+    star.style.height = size + "px";
+    star.style.left = Math.random() * 100 + "%";
+    star.style.animationDuration = duration + "s";
+
+    document.querySelector(".stars").appendChild(star);
+
+    setTimeout(() => {
+        star.remove();
+    }, duration * 1000);
+}
+
+setInterval(createStar, 150);
+</script>
+</body>
+</html>

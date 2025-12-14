@@ -1,0 +1,102 @@
+/* Black & Gold Theme */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to top right, #000000, #1a1a1a);
+    color: #f5d57a; /* gold text */
+}
+
+nav {
+    background: #000000;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(255,215,0,0.3);
+}
+
+nav a {
+    color: #f5d57a;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    color: #f5d57a;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #111111;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(255,215,0,0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.circle-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 5px 20px rgba(255,215,0,0.5);
+    transition: 0.3s;
+}
+
+.circle-photo:hover {
+    transform: scale(1.05);
+}
+
+.video-center {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border-left: 6px solid #f5d57a;
+    color: #f5d57a;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #262626;
+}
+
+ul li {
+    padding: 10px;
+    font-size: 18px;
+    color: #f5d57a;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255,215,0,0.4);
+}
+
+iframe, video {
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(255,215,0,0.3);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
